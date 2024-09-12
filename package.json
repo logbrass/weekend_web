@@ -14,7 +14,7 @@
     "express": "^4.21.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0",
+    "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -22,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "tailwindcss": "^3.3.3"
   },
   "description": "This repository contains the code for a stunning parallax scrolling website built using React and styled with Tailwind CSS. The website showcases the creative use of the parallax scrolling technique, a popular method in web design that adds depth and dynamism to a two-dimensional surface. The site features captivating visuals, smooth animations, and an engaging user experience. <br/>",
